@@ -26,12 +26,12 @@ from gemini_pro_bot.handlers import (
 load_dotenv()
 
 # Proxy settings (replace with your proxy details)
-PROXY_HOST = "172.252.110.215"  # Example: "192.168.1.10"
-PROXY_PORT = 64676  # Example port
+PROXY_HOST = ""  # Example: "192.168.1.10"
+PROXY_PORT = 11111  # Example port
 PROXY_TYPE = socks.HTTP  # Or socks.SOCKS4, socks.HTTP, etc.
 # You might also need username and password for some proxies:
-PROXY_USERNAME = "TQDcLFzD"  # (Optional)
-PROXY_PASSWORD = "beBUzDkf"  # (Optional)
+PROXY_USERNAME = ""  # (Optional)
+PROXY_PASSWORD = ""  # (Optional)
 
 # Request kwargs for proxy (create a separate function for reusability)
 def request_kwargs(proxy_url=None):
