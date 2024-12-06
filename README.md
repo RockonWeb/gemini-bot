@@ -1,6 +1,6 @@
 <div align="center">
 
-  # GEMINI-PRO-BOT
+  # GEMINI-BOT
   
   **A Python Telegram bot powered by Google's `gemini-pro` LLM API**
 
