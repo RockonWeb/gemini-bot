@@ -18,8 +18,11 @@
 * Easy to use with simple commands:
     * `/start`: Greet the bot and get started.
     * `/help`: Get information about the bot's capabilities.
+    * `/set_model`: Change your model(gemini 1.5 flash or gemini 1.5 pro).
+    *  `/show_db`: Get information about the user's model.
 * Send any text message to trigger the generation process.
 * Send any image with captions to generate responses based on the image. (Multi-modal support)
+* Send any(almost) files with captions to generate responses based on the file. (Multi-modal support)
 * User authentication to prevent unauthorized access by setting `AUTHORIZED_USERS` in the `.env` file (optional).
 
 ### Requirements
@@ -41,18 +44,20 @@ docker run --env-file .env ghcr.io/rabilrbl/gemini-pro-bot:latest
 
 Update the image with:
 ```shell
-docker pull ghcr.io/rabilrbl/gemini-pro-bot:latest
+docker pull ghcr.io/rabilrbl/gemini-bot:latest
 ```
 
 #### Build
 Build the image with:
 ```shell
-docker build -t gemini-pro-bot .
+docker build -t gemini-bot .
 ```
 Once the image is built, you can run it with:
 ```shell
-docker run --env-file .env gemini-pro-bot
+docker run --env-file .env gemini-bot
 ```
+
+### **Or just env**
 
 ### Installation
 
@@ -89,6 +94,7 @@ docker run --env-file .env gemini-pro-bot
 | ------- | ----------- |
 | `/start` | Greet the bot and get started. |
 | `/help` | Get information about the bot's capabilities. |
+| `/set_model` | Change your model(gemini 1.5 flash or gemini 1.5 pro). |
 | `/new` | Start a new chat session. |
 
 
