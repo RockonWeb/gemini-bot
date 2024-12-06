@@ -14,7 +14,7 @@ SAFETY_SETTINGS = {
 }
 
 
-genai.configure(api_key=os.getenv("AIzaSyC6AEgAgVu06yt4HMIF8RPeMQZJqv5GG4A"))
+genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 # Define model dictionary
 models = {
