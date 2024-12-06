@@ -33,31 +33,9 @@
 * dotenv (for environment variables)
 
 
-### Docker
-
-#### GitHub Container Registry
-Simply run the following command to run the pre-built image from GitHub Container Registry:
-
-```shell
-docker run --env-file .env ghcr.io/rabilrbl/gemini-pro-bot:latest
-```
-
-Update the image with:
-```shell
-docker pull ghcr.io/rabilrbl/gemini-bot:latest
-```
-
-#### Build
-Build the image with:
-```shell
-docker build -t gemini-bot .
-```
-Once the image is built, you can run it with:
-```shell
-docker run --env-file .env gemini-bot
-```
-
-### **Or just env**
+### **Create env(optional)**
+`python -m venv .venv` (create)
+`.venv\Scripts\activate` (activate)
 
 ### Installation
 
